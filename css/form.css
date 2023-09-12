@@ -682,10 +682,13 @@ ul {
 }
 
 .zf-submitColor:hover {
-  background: linear-gradient(275deg, #9b2269 5%, #d378ff 100%);
+  background: linear-gradient(275deg, #2f9eec 5%, #15baec 100%);
+
   border-color: transparent;
-  border-left-color: #d378ff;
-  border-right-color: #9b2269;
+
+  border-left-color: #2f9eec;
+
+  border-right-color: #15baec;
 }
 
 /****************Field Small/Medium/Large Starts Here****************/
@@ -1168,7 +1171,7 @@ form input[type="tel"],
 form input[type="text"],
 form select,
 form textarea {
-  display: inline-block;
+  display: inline-block !important;
   width: 100% !important;
 }
 
@@ -1490,18 +1493,16 @@ label {
 
 @media (max-width: 600px) {
   .zf-nameWrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr !important;
   }
-  form input[type="text"] {
-    width: 300px !important;
+  /* form input[type="text"] {
+    max-width: 300px !important;
   }
-  form select {
-    width: 300px !important;
-  }
+
   form input[type="file"] {
-    width: 300px !important;
-  }
+    max-width: 300px !important;
+  } */
   .zf-name .zf-tempContDiv span {
     margin-left: 0px !important;
     padding-top: 15px !important;
@@ -1510,12 +1511,36 @@ label {
   .zf-flLeft {
     margin-bottom: 0px;
   }
-  form textarea {
+  /* form textarea {
     min-width: 0 !important;
     width: 300px !important;
-  }
+  } */
   .name-item {
     display: grid;
     grid-template-columns: 1fr !important;
   }
+
+  .name-item-2 {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .zf-tempFrmWrapper .zf-tempContDiv {
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+
+  .zf-namelarge .zf-twoType .zf-nameWrapper span {
+    width: 100% !important;
+    margin-left: 2%;
+  }
+  .zf-templateWrapper {
+    padding: 0px 10px 0 10px;
+}
+}
+@media (max-width: 420px) {
+  .zf-tempHeadContBdr .zf-frmTitle {
+    font-size: 30px;
+}
 }
