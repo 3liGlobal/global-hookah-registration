@@ -1126,6 +1126,9 @@ ul {
   margin: 15px 3px 15px 15px;
   padding: 10px 10px 10px 40px;
 }
+.zf-nameWrapper {
+  margin-top: -20px;
+}
 .zf-descFld body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -1154,6 +1157,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .name-item input,
   .city-item input {
     width: 100%;
@@ -1543,4 +1547,7 @@ label {
   .zf-tempHeadContBdr .zf-frmTitle {
     font-size: 30px;
 }
+}
+.addr{
+  padding-bottom: 8px;
 }
