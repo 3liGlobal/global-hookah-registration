@@ -172,26 +172,26 @@
 										</span>
 										<div class="name-item-2">
 											<span class="zf-flLeft zf-addtwo"> 
-												<label class="addr">City</label><input type="text" maxlength="255"
-													name="Address_City" checktype="c1" placeholder="" />
+												<label class="addr">City <em class="zf-important">*</em></label><input type="text" maxlength="255"
+													name="Address_City" checktype="c1" placeholder="" required/>
 												
 											</span>
-											<span class="zf-flLeft zf-addtwo"> <label class="addr">State/Region/Province</label>
+											<span class="zf-flLeft zf-addtwo"> <label class="addr">State/Region/Province <em class="zf-important">*</em></label>
 												<input type="text" maxlength="255"
-													name="Address_Region" checktype="c1" placeholder="" />
+													name="Address_Region" checktype="c1" placeholder="" required/>
 												
 											</span>
 										</div>
 										<div class="name-item-2">
 											<span class="zf-flLeft zf-addtwo"> 
-												<label class="addr">Postal / Zip Code</label>
+												<label class="addr">Postal / Zip Code <em class="zf-important">*</em></label>
 												<input type="text" maxlength="255"
-													name="Address_ZipCode" checktype="c1" placeholder="" />
+													name="Address_ZipCode" checktype="c1" placeholder="" required/>
 												
 											</span>
-											<span class="zf-flLeft zf-addtwo"><label class="addr">Country</label>
+											<span class="zf-flLeft zf-addtwo"><label class="addr">Country <em class="zf-important">*</em></label>
 												 <select class="zf-form-sBox"
-													name="Address_Country" checktype="c1">
+													name="Address_Country" checktype="c1" required>
 													<option value="-Select-">-Select-</option>
 													<option>&Aring;land Islands</option>
 													<option>Afghanistan</option>
@@ -477,13 +477,13 @@
 							<li class="zf-tempFrmWrapper zf-name zf-namelarge">
 								<div class="zf-tempContDiv zf-twoType">
 									<div class="zf-nameWrapper">
-										<span> <label class="addr">First Name</label>
+										<span> <label class="addr">First Name <em class="zf-important">*</em></label>
 											<input type="text" maxlength="255" name="Name_First" fieldType=7
-												placeholder="" /> 
+												placeholder="" required/> 
 										</span>
 										</span> </span>
-										<span><label class="addr">Last Name</label> <input type="text" maxlength="255" name="Name_Last" fieldType=7
-												placeholder="" /> 
+										<span><label class="addr">Last Name <em class="zf-important">*</em></label> <input type="text" maxlength="255" name="Name_Last" fieldType=7
+												placeholder="" required/> 
 										</span>
 										</span> </span>
 										<div class="zf-clearBoth"></div>
@@ -494,11 +494,11 @@
 							</li><!---------Name Ends Here---------->
 							<!---------Single Line Starts Here---------->
 							<li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName">
-									Tobacco License Number
+									Tobacco License Number <em class="zf-important">*</em>
 								</label>
 								<div class="zf-tempContDiv">
 									<span> <input type="text" name="SingleLine2" checktype="c1" value="" maxlength="255"
-											fieldType=1 placeholder="" /></span>
+											fieldType=1 placeholder="" required/></span>
 									<p id="SingleLine2_error" class="zf-errorMessage" style="display:none;">Invalid
 										value
 									</p>
@@ -507,10 +507,10 @@
 							</li><!---------Single Line Ends Here---------->
 							<!--fileupload-->
 							<!---------File Upload Starts Here---------->
-							<li class="zf-tempFrmWrapper"><label class="zf-labelName">Tobacco License Upload
+							<li class="zf-tempFrmWrapper"><label class="zf-labelName">Tobacco License Upload <em class="zf-important">*</em>
 								</label>
 								<div class="zf-tempContDiv">
-									<input type="file" name="FileUpload" checktype="c1" />
+									<input type="file" name="FileUpload" checktype="c1" required/>
 									<p id="FileUpload_error" class="zf-errorMessage" style="display:none;">Choose any
 										file
 										for this field.</p>
@@ -519,11 +519,11 @@
 							</li><!---------File Upload Ends Here---------->
 							<!---------Single Line Starts Here---------->
 							<li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
-									Sales Tax License Number
+									Sales Tax License Number <em class="zf-important">*</em>
 								</label>
 								<div class="zf-tempContDiv">
 									<span> <input type="text" name="SingleLine3" checktype="c1" value="" maxlength="255"
-											fieldType=1 placeholder="" /></span>
+											fieldType=1 placeholder="" required/></span>
 									<p id="SingleLine3_error" class="zf-errorMessage" style="display:none;">Invalid
 										value
 									</p>
@@ -532,10 +532,10 @@
 							</li><!---------Single Line Ends Here---------->
 							<!--fileupload-->
 							<!---------File Upload Starts Here---------->
-							<li class="zf-tempFrmWrapper"><label class="zf-labelName">Sales Tax License Upload
+							<li class="zf-tempFrmWrapper"><label class="zf-labelName">Sales Tax License Upload <em class="zf-important">*</em>
 								</label>
 								<div class="zf-tempContDiv">
-									<input type="file" name="FileUpload1" checktype="c1" />
+									<input type="file" name="FileUpload1" checktype="c1" required/>
 									<p id="FileUpload1_error" class="zf-errorMessage" style="display:none;">Choose any
 										file
 										for this field.</p>
@@ -544,11 +544,11 @@
 							</li><!---------File Upload Ends Here---------->
 							<!---------Single Line Starts Here---------->
 							<li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
-									Federal ID Number
+									Federal ID Number <em class="zf-important">*</em>
 								</label>
 								<div class="zf-tempContDiv">
 									<span> <input type="text" name="SingleLine4" checktype="c1" value="" maxlength="255"
-											fieldType=1 placeholder="" /></span>
+											fieldType=1 placeholder="" required/></span>
 									<p id="SingleLine4_error" class="zf-errorMessage" style="display:none;">Invalid
 										value
 									</p>
@@ -557,10 +557,10 @@
 							</li><!---------Single Line Ends Here---------->
 							<!--fileupload-->
 							<!---------File Upload Starts Here---------->
-							<li class="zf-tempFrmWrapper"><label class="zf-labelName">Federal ID Upload
+							<li class="zf-tempFrmWrapper"><label class="zf-labelName">Federal ID Upload <em class="zf-important">*</em>
 								</label>
 								<div class="zf-tempContDiv">
-									<input type="file" name="FileUpload2" checktype="c1" />
+									<input type="file" name="FileUpload2" checktype="c1" required/>
 									<p id="FileUpload2_error" class="zf-errorMessage" style="display:none;">Choose any
 										file
 										for this field.</p>
