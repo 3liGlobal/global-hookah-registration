@@ -478,7 +478,7 @@
 								<div class="zf-tempContDiv zf-twoType">
 									<div class="zf-nameWrapper">
 										<span> <label class="addr">First Name <em class="zf-important">*</em></label>
-											<input id="letterInput oninput="validateInput(this)" type="text" maxlength="255" name="Name_First" fieldType=7
+											<input onkeydown="return /[a-z]/i.test(event.key)" type="text" maxlength="255" name="Name_First" fieldType=7
 												placeholder="" required/> 
 											<span id="validationMessage"></span>
 										</span>
@@ -595,21 +595,6 @@
 			</div><!-- 'zf-templateWrapper' ends -->
 		</form>
 	</div><!-- 'zf-templateWidth' ends -->
-	<script>
-        function validateInput(inputElement) {
-            const inputValue = inputElement.value;
-            const regex = /^[A-Za-z]+$/;
-
-            if (regex.test(inputValue)) {
-                // Valid input
-                document.getElementById("validationMessage").textContent = "";
-            } else {
-                // Invalid input
-                document.getElementById("validationMessage").textContent = "Please enter letters only.";
-                inputElement.value = inputValue.replace(/[^A-Za-z]+/g, ''); // Remove non-letter characters
-            }
-        }
-    </script>
 	<script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
 		var zf_MandArray = ["SingleLine", "Dropdown", "Email", "PhoneNumber_countrycode", "Address_AddressLine1", "Address_Region", "Address_ZipCode", "Address_Country", "Name_First", "Name_Last"];
 		var zf_FieldArray = ["SingleLine", "Dropdown", "Email", "PhoneNumber_countrycode", "PhoneNumber1_countrycode", "SingleLine1", "Address_AddressLine1", "Address_AddressLine2", "Address_City", "Address_Region", "Address_ZipCode", "Address_Country", "Name_First", "Name_Last", "SingleLine2", "FileUpload", "SingleLine3", "FileUpload1", "SingleLine4", "FileUpload2", "MultiLine"];
